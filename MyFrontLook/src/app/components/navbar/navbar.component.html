@@ -1,0 +1,84 @@
+<!--<p>navbar works!</p>-->
+<div style="text-align:center">
+  <img src="/assets/images/download (2).png" width = "100" height = "100" align = "center" hspace ="12" >
+  <span style="font-size: 60px;">AeroTrip </span><span style="font-size: 25px;"></span> 
+</div>
+<br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    .container {
+      position: relative;
+      font-family: Arial;
+    }
+    
+    .text-block {
+      position: absolute;
+      left: 20px;
+      background-color: black;
+      opacity: 0.5;
+      color: white;
+      padding-top: 60x;
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+    #footer {
+      position: absolute;
+    bottom: 0;
+    right: 0;
+    color: rgb(11, 11, 11);
+ }
+    
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      
+      <!--<a class="navbar-brand" href="http://localhost:4200/adminSearchFlight">Search Flights</a>-->
+      <!--<a class="navbar-brand" href="http://localhost:4200/allFlights">Get All Flights</a>-->
+      <!--<a class="navbar-brand" href="http://localhost:4200/Booking">Get All Bookings</a>-->
+      <!--<a class="navbar-brand" href="http://localhost:4200/search">Add Flights</a>-->
+    </div>
+   
+    <ul class="nav navbar-nav navbar-right">
+      <li><a class="navbar-brand" href="http://localhost:4200/signup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a class="navbar-brand" href="http://localhost:4200/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      <li><a class="navbar-brand" href="http://localhost:4200/admin"><span class="glyphicon glyphicon-log-in"></span> Admin Login</a></li>
+      <li><span  *ngIf="loggedIn" style="color: #f8f6f6;" class="username">
+        Welcome {{username}}
+        &nbsp;&nbsp;
+        <button style="color: black;"><a href="Javascript.void(0)" (click)="onLogOut()" routerLink="/" style="color: rgb(5, 5, 4);">log out</a></button>
+      </span></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  
+  
+  
+</div>
+<div class="text-block">
+  <h4>Note</h4>
+  <p>AeroTrip is a platform where any user can search, book and checkin flights in a single click. We provide you 
+    the cheapest flights and the best ones!!!
+  </p>
+</div>
+  
+<div class="container">
+</div>
+<br>
+<div id="footer"><p>©2022 Flight Booking Application, Contact us:flightbooking@gmail.com</p></div>
+<br>
+</body>
+</html>
